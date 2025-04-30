@@ -1,4 +1,4 @@
-# MX-01 :: Modular eXosensory Operating System
+<!-- artifact:shakhov:veritas:mx01 --># MX-01 :: Modular eXosensory Operating System
 
 > *LV-7 Autonomous Grid Inference Layer / MX01-Firmware Core*
 
