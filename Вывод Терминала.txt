@@ -1,0 +1,870 @@
+Last login: Sun Jul 21 23:18:38 on ttys002
+alexfine@MacBook-Air-Alex ~ % cd /Users/alexfine/PycharmProjects/sreener
+source .venv/bin/activate
+(.venv) alexfine@MacBook-Air-Alex sreener % pip uninstall python-binance
+pip uninstall binance
+pip install python-binance==1.0.19
+WARNING: Skipping python-binance as it is not installed.
+Found existing installation: binance 0.3
+Uninstalling binance-0.3:
+  Would remove:
+    /Users/alexfine/PycharmProjects/sreener/.venv/lib/python3.12/site-packages/binance-0.3.dist-info/*
+    /Users/alexfine/PycharmProjects/sreener/.venv/lib/python3.12/site-packages/binance.py
+Proceed (Y/n)? 
+  [Восстановлен 16 дек. 2567 г. BE, 17:48:03]
+Last login: Sat Aug 10 11:13:30 on ttys000
+Restored session: Sat Aug 24 11:15:22 +07 2024
+alexfine@MacBook-Air-Alex sreener % cd ~/Desktop  # переход на рабочий стол
+mkdir matrixzero  # создание новой папки
+cd matrixzero  # переход в папку
+cd: too many arguments
+cd: too many arguments
+alexfine@MacBook-Air-Alex sreener % mkdir templates
+mkdir: templates: File exists
+alexfine@MacBook-Air-Alex sreener % mkdir -p static/js
+alexfine@MacBook-Air-Alex sreener % mkdir -p static/css
+alexfine@MacBook-Air-Alex sreener % touch app.py templates/index.html
+alexfine@MacBook-Air-Alex sreener % ls -R
+#			main (3).py		templates
+app.py			main.py			новой
+config.yml		matrixzero		папки
+main (1).py		qodana.yaml		создание
+main (2).py		static
+
+./#:
+
+./matrixzero:
+
+./static:
+css	js
+
+./static/css:
+
+./static/js:
+
+./templates:
+index.html
+
+./новой:
+
+./папки:
+
+./создание:
+alexfine@MacBook-Air-Alex sreener % cd ~/Desktop
+alexfine@MacBook-Air-Alex Desktop % rm -rf matrixzero 
+alexfine@MacBook-Air-Alex Desktop % mkdir matrixzero 
+alexfine@MacBook-Air-Alex Desktop % cd matrixzero 
+alexfine@MacBook-Air-Alex matrixzero % pwd
+/Users/alexfine/Desktop/matrixzero
+alexfine@MacBook-Air-Alex matrixzero % mkdir templates
+alexfine@MacBook-Air-Alex matrixzero % mkdir -p static/css
+alexfine@MacBook-Air-Alex matrixzero % mkdir -p static/js
+alexfine@MacBook-Air-Alex matrixzero % touch templates/index.html
+alexfine@MacBook-Air-Alex matrixzero % touch app.py
+alexfine@MacBook-Air-Alex matrixzero % ls -R
+app.py		static		templates
+
+./static:
+css	js
+
+./static/css:
+
+./static/js:
+
+./templates:
+index.html
+alexfine@MacBook-Air-Alex matrixzero % open -e app.py
+alexfine@MacBook-Air-Alex matrixzero % open -e templates/index.html
+alexfine@MacBook-Air-Alex matrixzero % cat templates/index.html
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Matrix Cloud System&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #000;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#controls {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>left: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: rgba(255, 255, 255, 0.8);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: monospace;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(0,0,0,0.8);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid rgba(255, 255, 255, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 180px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.control-group {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 5px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 5px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-top: 1px solid rgba(255, 255, 255, 0.2);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 11px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.button {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(255, 255, 255, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: rgba(255, 255, 255, 0.8);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid rgba(255, 255, 255, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 3px 6px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 1px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-width: 35px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 11px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.2s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.button:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(255, 255, 255, 0.2);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.grid {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(2, 1fr);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 2px 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="controls"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="control-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;View:&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="zoomIn()"&gt;+&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="zoomOut()"&gt;-&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="resetView()"&gt;Reset&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="toggleAutoRotate()"&gt;Auto&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="control-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;Rotate:&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="rotateX(1)"&gt;X+&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="rotateX(-1)"&gt;X-&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="rotateY(1)"&gt;Y+&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="rotateY(-1)"&gt;Y-&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="rotateZ(1)"&gt;Z+&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="rotateZ(-1)"&gt;Z-&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="control-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;Quick View:&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="setTopView()"&gt;Top&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="setFrontView()"&gt;Front&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="setSideView()"&gt;Side&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="setIsoView()"&gt;Iso&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let scene, camera, renderer;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let autoRotate = false;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const numberSequence = "019876543210123456789";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const spacing = 0.5;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function init() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene = new THREE.Scene();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });</p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderer.setSize(window.innerWidth, window.innerHeight);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.body.appendChild(renderer.domElement);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.position.set(5, 5, 5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.lookAt(0, 0, 0);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>createMainAxes();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>createDiagonalSequences();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>setupLights();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>setupControls();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>animate();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function createMainAxes() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>createAxis(new THREE.Vector3(0, 1, 0));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>createAxis(new THREE.Vector3(1, 0, 0));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>createAxis(new THREE.Vector3(0, 0, 1));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>addNumber("0", new THREE.Vector3(0, 0, 0), 0.4);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function createAxis(direction) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>numberSequence.split('').forEach((num, i) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const distance = spacing * (i + 1);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const position = direction.clone().multiplyScalar(distance);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>addNumber(num, position, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>addNumber(num, position.clone().multiplyScalar(-1), 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function createDiagonalSequences() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const angles = [</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ theta: Math.PI/4, phi: 0 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ theta: -Math.PI/4, phi: 0 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ theta: Math.PI/4, phi: Math.PI/2 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ theta: -Math.PI/4, phi: Math.PI/2 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ theta: Math.PI/4, phi: Math.PI/4 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ theta: Math.PI/4, phi: -Math.PI/4 }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>];</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>angles.forEach(angle =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>createDiagonalSequence(angle.theta, angle.phi);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function createDiagonalSequence(theta, phi) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>numberSequence.split('').forEach((num, i) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const distance = spacing * (i + 1);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const x = distance * Math.sin(theta) * Math.cos(phi);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const y = distance * Math.sin(theta) * Math.sin(phi);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const z = distance * Math.cos(theta);</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>addNumber(num, new THREE.Vector3(x, y, z), 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>addNumber(num, new THREE.Vector3(-x, -y, -z), 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function addNumber(number, position, scale) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const canvas = document.createElement('canvas');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>canvas.width = 128;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>canvas.height = 128;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const ctx = canvas.getContext('2d');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.fillStyle = 'transparent';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.fillRect(0, 0, 128, 128);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.font = '300 64px monospace';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.textAlign = 'center';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.textBaseline = 'middle';</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.shadowColor = 'rgba(255, 255, 255, 0.5)';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.shadowBlur = 5;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.fillText(number, 64, 64);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const texture = new THREE.CanvasTexture(canvas);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>texture.minFilter = THREE.LinearFilter;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>texture.magFilter = THREE.LinearFilter;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const material = new THREE.SpriteMaterial({<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>map: texture,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>transparent: true,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>opacity: 0.8</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const sprite = new THREE.Sprite(material);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>sprite.position.copy(position);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>sprite.scale.set(scale, scale, scale);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.add(sprite);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function setupLights() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const ambient = new THREE.AmbientLight(0xffffff, 0.5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.add(ambient);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const point = new THREE.PointLight(0xffffff, 0.5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>point.position.set(5, 5, 5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.add(point);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function setupControls() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let isDragging = false;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let previousMousePosition = {x: 0, y: 0};</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.addEventListener('mousedown', (e) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>isDragging = true;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>previousMousePosition = {x: e.clientX, y: e.clientY};</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.addEventListener('mousemove', (e) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if(!isDragging) return;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const deltaMove = {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>x: e.clientX - previousMousePosition.x,</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>y: e.clientY - previousMousePosition.y</p>
+<p class="p1"><span class="Apple-converted-space">                </span>};</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>scene.rotation.y += deltaMove.x * 0.005;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>scene.rotation.x += deltaMove.y * 0.005;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>previousMousePosition = {x: e.clientX, y: e.clientY};</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.addEventListener('mouseup', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>isDragging = false;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.addEventListener('wheel', (e) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const zoomSpeed = 0.1;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>camera.position.multiplyScalar(1 + (e.deltaY &gt; 0 ? zoomSpeed : -zoomSpeed));</p>
+<p class="p1"><span class="Apple-converted-space">                </span>camera.lookAt(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function rotateX(direction) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.rotation.x += direction * Math.PI/16;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function rotateY(direction) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.rotation.y += direction * Math.PI/16;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function rotateZ(direction) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.rotation.z += direction * Math.PI/16;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function zoomIn() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.position.multiplyScalar(0.8);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.lookAt(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function zoomOut() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.position.multiplyScalar(1.2);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.lookAt(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function setTopView() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.position.set(0, 10, 0);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.lookAt(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.rotation.set(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function setFrontView() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.position.set(0, 0, 10);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.lookAt(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.rotation.set(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function setSideView() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.position.set(10, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.lookAt(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.rotation.set(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function setIsoView() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.position.set(5, 5, 5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.lookAt(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.rotation.set(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function resetView() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>setIsoView();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function toggleAutoRotate() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>autoRotate = !autoRotate;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function animate() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>requestAnimationFrame(animate);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (autoRotate) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>scene.rotation.y += 0.01;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderer.render(scene, camera);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>init();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
+alexfine@MacBook-Air-Alex matrixzero % [200~pip install flask~
+zsh: bad pattern: [200~pip
+alexfine@MacBook-Air-Alex matrixzero % python app.py
+zsh: command not found: python
+alexfine@MacBook-Air-Alex matrixzero % cat templates/index.html
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Matrix Cloud System&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #000;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#controls {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>left: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: rgba(255, 255, 255, 0.8);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: monospace;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(0,0,0,0.8);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid rgba(255, 255, 255, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 180px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.control-group {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 5px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 5px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-top: 1px solid rgba(255, 255, 255, 0.2);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 11px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.button {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(255, 255, 255, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: rgba(255, 255, 255, 0.8);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid rgba(255, 255, 255, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 3px 6px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 1px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-width: 35px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 11px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.2s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.button:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(255, 255, 255, 0.2);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.grid {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(2, 1fr);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 2px 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="controls"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="control-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;View:&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="zoomIn()"&gt;+&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="zoomOut()"&gt;-&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="resetView()"&gt;Reset&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="toggleAutoRotate()"&gt;Auto&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="control-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;Rotate:&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="rotateX(1)"&gt;X+&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="rotateX(-1)"&gt;X-&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="rotateY(1)"&gt;Y+&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="rotateY(-1)"&gt;Y-&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="rotateZ(1)"&gt;Z+&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="rotateZ(-1)"&gt;Z-&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="control-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;Quick View:&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="setTopView()"&gt;Top&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="setFrontView()"&gt;Front&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="setSideView()"&gt;Side&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="button" onclick="setIsoView()"&gt;Iso&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let scene, camera, renderer;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let autoRotate = false;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const numberSequence = "019876543210123456789";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const spacing = 0.5;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function init() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene = new THREE.Scene();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });</p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderer.setSize(window.innerWidth, window.innerHeight);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.body.appendChild(renderer.domElement);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.position.set(5, 5, 5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.lookAt(0, 0, 0);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>createMainAxes();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>createDiagonalSequences();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>setupLights();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>setupControls();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>animate();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function createMainAxes() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>createAxis(new THREE.Vector3(0, 1, 0));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>createAxis(new THREE.Vector3(1, 0, 0));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>createAxis(new THREE.Vector3(0, 0, 1));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>addNumber("0", new THREE.Vector3(0, 0, 0), 0.4);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function createAxis(direction) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>numberSequence.split('').forEach((num, i) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const distance = spacing * (i + 1);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const position = direction.clone().multiplyScalar(distance);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>addNumber(num, position, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>addNumber(num, position.clone().multiplyScalar(-1), 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function createDiagonalSequences() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const angles = [</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ theta: Math.PI/4, phi: 0 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ theta: -Math.PI/4, phi: 0 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ theta: Math.PI/4, phi: Math.PI/2 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ theta: -Math.PI/4, phi: Math.PI/2 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ theta: Math.PI/4, phi: Math.PI/4 },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ theta: Math.PI/4, phi: -Math.PI/4 }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>];</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>angles.forEach(angle =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>createDiagonalSequence(angle.theta, angle.phi);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function createDiagonalSequence(theta, phi) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>numberSequence.split('').forEach((num, i) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const distance = spacing * (i + 1);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const x = distance * Math.sin(theta) * Math.cos(phi);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const y = distance * Math.sin(theta) * Math.sin(phi);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const z = distance * Math.cos(theta);</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>addNumber(num, new THREE.Vector3(x, y, z), 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>addNumber(num, new THREE.Vector3(-x, -y, -z), 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function addNumber(number, position, scale) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const canvas = document.createElement('canvas');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>canvas.width = 128;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>canvas.height = 128;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const ctx = canvas.getContext('2d');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.fillStyle = 'transparent';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.fillRect(0, 0, 128, 128);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.font = '300 64px monospace';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.textAlign = 'center';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.textBaseline = 'middle';</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.shadowColor = 'rgba(255, 255, 255, 0.5)';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.shadowBlur = 5;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.fillText(number, 64, 64);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const texture = new THREE.CanvasTexture(canvas);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>texture.minFilter = THREE.LinearFilter;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>texture.magFilter = THREE.LinearFilter;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const material = new THREE.SpriteMaterial({<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>map: texture,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>transparent: true,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>opacity: 0.8</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const sprite = new THREE.Sprite(material);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>sprite.position.copy(position);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>sprite.scale.set(scale, scale, scale);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.add(sprite);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function setupLights() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const ambient = new THREE.AmbientLight(0xffffff, 0.5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.add(ambient);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const point = new THREE.PointLight(0xffffff, 0.5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>point.position.set(5, 5, 5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.add(point);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function setupControls() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let isDragging = false;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let previousMousePosition = {x: 0, y: 0};</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.addEventListener('mousedown', (e) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>isDragging = true;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>previousMousePosition = {x: e.clientX, y: e.clientY};</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.addEventListener('mousemove', (e) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if(!isDragging) return;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const deltaMove = {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>x: e.clientX - previousMousePosition.x,</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>y: e.clientY - previousMousePosition.y</p>
+<p class="p1"><span class="Apple-converted-space">                </span>};</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>scene.rotation.y += deltaMove.x * 0.005;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>scene.rotation.x += deltaMove.y * 0.005;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>previousMousePosition = {x: e.clientX, y: e.clientY};</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.addEventListener('mouseup', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>isDragging = false;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.addEventListener('wheel', (e) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const zoomSpeed = 0.1;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>camera.position.multiplyScalar(1 + (e.deltaY &gt; 0 ? zoomSpeed : -zoomSpeed));</p>
+<p class="p1"><span class="Apple-converted-space">                </span>camera.lookAt(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function rotateX(direction) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.rotation.x += direction * Math.PI/16;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function rotateY(direction) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.rotation.y += direction * Math.PI/16;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function rotateZ(direction) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.rotation.z += direction * Math.PI/16;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function zoomIn() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.position.multiplyScalar(0.8);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.lookAt(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function zoomOut() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.position.multiplyScalar(1.2);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.lookAt(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function setTopView() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.position.set(0, 10, 0);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.lookAt(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.rotation.set(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function setFrontView() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.position.set(0, 0, 10);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.lookAt(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.rotation.set(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function setSideView() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.position.set(10, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.lookAt(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.rotation.set(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function setIsoView() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.position.set(5, 5, 5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>camera.lookAt(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scene.rotation.set(0, 0, 0);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function resetView() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>setIsoView();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function toggleAutoRotate() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>autoRotate = !autoRotate;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function animate() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>requestAnimationFrame(animate);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (autoRotate) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>scene.rotation.y += 0.01;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderer.render(scene, camera);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>init();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
+alexfine@MacBook-Air-Alex matrixzero % brew install --cask visual-studio-code
+zsh: command not found: brew
+alexfine@MacBook-Air-Alex matrixzero % /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+==> Checking for `sudo` access (which may request your password)...
+Password:
+Sorry, try again.
+Password:
+==> This script will install:
+/opt/homebrew/bin/brew
+/opt/homebrew/share/doc/homebrew
+/opt/homebrew/share/man/man1/brew.1
+/opt/homebrew/share/zsh/site-functions/_brew
+/opt/homebrew/etc/bash_completion.d/brew
+/opt/homebrew
+==> The following new directories will be created:
+/opt/homebrew/bin
+/opt/homebrew/etc
+/opt/homebrew/include
+/opt/homebrew/lib
+/opt/homebrew/sbin
+/opt/homebrew/share
+/opt/homebrew/var
+/opt/homebrew/opt
+/opt/homebrew/share/zsh
+/opt/homebrew/share/zsh/site-functions
+/opt/homebrew/var/homebrew
+/opt/homebrew/var/homebrew/linked
+/opt/homebrew/Cellar
+/opt/homebrew/Caskroom
+/opt/homebrew/Frameworks
+
+Press RETURN/ENTER to continue or any other key to abort:
+==> /usr/bin/sudo /usr/bin/install -d -o root -g wheel -m 0755 /opt/homebrew
+==> /usr/bin/sudo /bin/mkdir -p /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /bin/chmod ug=rwx /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /bin/chmod go-w /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions
+==> /usr/bin/sudo /usr/sbin/chown alexfine /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /usr/bin/chgrp admin /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /usr/sbin/chown -R alexfine:admin /opt/homebrew
+==> /usr/bin/sudo /bin/mkdir -p /Users/alexfine/Library/Caches/Homebrew
+==> /usr/bin/sudo /bin/chmod g+rwx /Users/alexfine/Library/Caches/Homebrew
+==> /usr/bin/sudo /usr/sbin/chown -R alexfine /Users/alexfine/Library/Caches/Homebrew
+==> Downloading and installing Homebrew...
+remote: Enumerating objects: 288813, done.
+remote: Counting objects: 100% (4332/4332), done.
+remote: Compressing objects: 100% (428/428), done.
+remote: Total 288813 (delta 3987), reused 3948 (delta 3904), pack-reused 284481 (from 3)
+remote: Enumerating objects: 55, done.
+remote: Counting objects: 100% (34/34), done.
+remote: Total 55 (delta 33), reused 33 (delta 33), pack-reused 21 (from 1)
+==> Updating Homebrew...
+==> Downloading https://ghcr.io/v2/homebrew/portable-ruby/portable-ruby/blobs/sha256:303bed4c7fc431a685db3c3c151d873740114adbdccd23762ea2d1e39ea78f47
+##################################################################################################################################################################################################### 100.0%
+==> Pouring portable-ruby-3.3.6.arm64_big_sur.bottle.tar.gz
+Warning: /opt/homebrew/bin is not in your PATH.
+  Instructions on how to configure your shell for Homebrew
+  can be found in the 'Next steps' section below.
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate formulae and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics data has been sent yet (nor will any be during this install run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Next steps:
+- Run these commands in your terminal to add Homebrew to your PATH:
+    echo >> /Users/alexfine/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/alexfine/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+- Run brew help to get started
+- Further documentation:
+    https://docs.brew.sh
+
+alexfine@MacBook-Air-Alex matrixzero % 
+alexfine@MacBook-Air-Alex matrixzero % echo >> /Users/alexfine/.zprofile
+alexfine@MacBook-Air-Alex matrixzero % echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/alexfine/.zprofile
+alexfine@MacBook-Air-Alex matrixzero % eval "$(/opt/homebrew/bin/brew shellenv)"
+alexfine@MacBook-Air-Alex matrixzero % brew --version
+Homebrew 4.4.14
+alexfine@MacBook-Air-Alex matrixzero % brew install ngrok
+==> Caveats
+To install shell completions, add this to your profile:
+  if command -v ngrok &>/dev/null; then
+    eval "$(ngrok completion)"
+  fi
+
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-cask/8b15e25eb425404053fcd719fed96edccfe63f77/Casks/n/ngrok.rb
+##################################################################################################################################################################################################### 100.0%
+==> Downloading https://bin.equinox.io/a/6eUJ9CKgUtA/ngrok-v3-3.19.0-darwin-arm64.zip
+##################################################################################################################################################################################################### 100.0%
+==> Installing Cask ngrok
+==> Linking Binary 'ngrok' to '/opt/homebrew/bin/ngrok'
+🍺  ngrok was successfully installed!
+alexfine@MacBook-Air-Alex matrixzero % ngrok config add-authtoken  2rDg66AaWD8ZLEYamSQ75vFG2Du_6X2ZLcbte4yLhbNcPUVUr
+Authtoken saved to configuration file: /Users/alexfine/Library/Application Support/ngrok/ngrok.yml
+alexfine@MacBook-Air-Alex matrixzero % ngrok http 8001
+
+
+
+
+
+
+
+
+
+
+alexfine@MacBook-Air-Alex matrixzero % cd ~/Desktop                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
